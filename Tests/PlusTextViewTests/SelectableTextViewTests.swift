@@ -1,12 +1,12 @@
 import XCTest
-@testable import SelectableTextView
+@testable import PlusTextView
 
 final class SelectableTextViewTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(SelectableTextView().text, "Hello, World!")
+        XCTAssertEqual(PlusTextView().text, "Hello, World!")
     }
 
     static var allTests = [

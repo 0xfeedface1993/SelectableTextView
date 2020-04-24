@@ -539,3 +539,7 @@ public extension SelectableTextView {
         }
     }
 }
+
+struct PlusTextView {
+    var text = "Hello, World!"
+}
