@@ -23,7 +23,6 @@
 		26577DA31E46BDD1008DB9AB /* SelectableTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26577D991E46BDD1008DB9AB /* SelectableTextView.framework */; };
 		26577DA81E46BDD1008DB9AB /* SelectableTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26577DA71E46BDD1008DB9AB /* SelectableTextViewTests.swift */; };
 		26577DAA1E46BDD1008DB9AB /* SelectableTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26577D9C1E46BDD1008DB9AB /* SelectableTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26577DB61E46BE63008DB9AB /* SelectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26577DB51E46BE63008DB9AB /* SelectableTextView.swift */; };
 		26577DB81E46BF33008DB9AB /* TextViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26577DB71E46BF33008DB9AB /* TextViewLayout.swift */; };
 		26577DBA1E46BF8A008DB9AB /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26577DB91E46BF8A008DB9AB /* TextCell.swift */; };
 		26EC5D6F1E47A82900BA66D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC5D6E1E47A82900BA66D9 /* AppDelegate.swift */; };
@@ -39,6 +38,7 @@
 		26F941F61E4E742C00BB1AC5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F941F51E4E742C00BB1AC5 /* Operators.swift */; };
 		638E5DD42452E91100FDDFAA /* SelectableTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26577D991E46BDD1008DB9AB /* SelectableTextView.framework */; };
 		638E5DD52452E91100FDDFAA /* SelectableTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26577D991E46BDD1008DB9AB /* SelectableTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		638E5DE42452EB8800FDDFAA /* SelectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E5DE32452EB8800FDDFAA /* SelectableTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,6 @@
 		26577DA21E46BDD1008DB9AB /* SelectableTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectableTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26577DA71E46BDD1008DB9AB /* SelectableTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableTextViewTests.swift; sourceTree = "<group>"; };
 		26577DA91E46BDD1008DB9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26577DB51E46BE63008DB9AB /* SelectableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableTextView.swift; sourceTree = "<group>"; };
 		26577DB71E46BF33008DB9AB /* TextViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewLayout.swift; sourceTree = "<group>"; };
 		26577DB91E46BF8A008DB9AB /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		26EC5D6C1E47A82900BA66D9 /* SelectableTestView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SelectableTestView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +100,11 @@
 		26EC5D8B1E4D4B8500BA66D9 /* TextValidators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextValidators.swift; sourceTree = "<group>"; };
 		26EC5D8D1E4D7AD300BA66D9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		26F941F51E4E742C00BB1AC5 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		638E5DD72452EB5800FDDFAA /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		638E5DDB2452EB6A00FDDFAA /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		638E5DDC2452EB6A00FDDFAA /* SelectableTextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableTextViewTests.swift; sourceTree = "<group>"; };
+		638E5DDD2452EB6A00FDDFAA /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		638E5DE32452EB8800FDDFAA /* SelectableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,11 +149,13 @@
 		26577D8F1E46BDD1008DB9AB = {
 			isa = PBXGroup;
 			children = (
+				638E5DD72452EB5800FDDFAA /* Package.swift */,
+				638E5DE12452EB8800FDDFAA /* Sources */,
+				638E5DD92452EB6A00FDDFAA /* Tests */,
 				26EC5D671E47A7FC00BA66D9 /* Examples */,
 				26577DB31E46BE3C008DB9AB /* Framework */,
 				26577D9A1E46BDD1008DB9AB /* Products */,
 				26577DA61E46BDD1008DB9AB /* SelectableTextViewTests */,
-				26577DB41E46BE46008DB9AB /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,26 +190,6 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
-		26577DB41E46BE46008DB9AB /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				262225AE1E598B9C004E1B5C /* TextSelectionValidator */,
-				26EC5D8D1E4D7AD300BA66D9 /* Extensions.swift */,
-				262225AF1E5A51C7004E1B5C /* InterfaceBuilder.swift */,
-				26F941F51E4E742C00BB1AC5 /* Operators.swift */,
-				262225A41E52BD44004E1B5C /* SelectableTextView+ScrollView.swift */,
-				26577DB51E46BE63008DB9AB /* SelectableTextView.swift */,
-				26577DB91E46BF8A008DB9AB /* TextCell.swift */,
-				26EC5D831E49720900BA66D9 /* TextCellModel.swift */,
-				26EC5D851E498FDF00BA66D9 /* TextCellModelFactory.swift */,
-				262225A81E52CE9D004E1B5C /* TextExpansionButtonCell.swift */,
-				262225A61E52CB22004E1B5C /* TextExpansionButtonModel.swift */,
-				262225AA1E598458004E1B5C /* TextSelectionAppearance.swift */,
-				26577DB71E46BF33008DB9AB /* TextViewLayout.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		26EC5D671E47A7FC00BA66D9 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +211,52 @@
 				262225CA1E625363004E1B5C /* star.png */,
 			);
 			path = "SelectableTestView-Example";
+			sourceTree = "<group>";
+		};
+		638E5DD92452EB6A00FDDFAA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				638E5DDA2452EB6A00FDDFAA /* SelectableTextViewTests */,
+				638E5DDD2452EB6A00FDDFAA /* LinuxMain.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		638E5DDA2452EB6A00FDDFAA /* SelectableTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				638E5DDB2452EB6A00FDDFAA /* XCTestManifests.swift */,
+				638E5DDC2452EB6A00FDDFAA /* SelectableTextViewTests.swift */,
+			);
+			path = SelectableTextViewTests;
+			sourceTree = "<group>";
+		};
+		638E5DE12452EB8800FDDFAA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				638E5DE22452EB8800FDDFAA /* SelectableTextView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		638E5DE22452EB8800FDDFAA /* SelectableTextView */ = {
+			isa = PBXGroup;
+			children = (
+				26EC5D8D1E4D7AD300BA66D9 /* Extensions.swift */,
+				262225AF1E5A51C7004E1B5C /* InterfaceBuilder.swift */,
+				26F941F51E4E742C00BB1AC5 /* Operators.swift */,
+				262225A41E52BD44004E1B5C /* SelectableTextView+ScrollView.swift */,
+				26577DB91E46BF8A008DB9AB /* TextCell.swift */,
+				26EC5D831E49720900BA66D9 /* TextCellModel.swift */,
+				26EC5D851E498FDF00BA66D9 /* TextCellModelFactory.swift */,
+				262225A81E52CE9D004E1B5C /* TextExpansionButtonCell.swift */,
+				262225A61E52CB22004E1B5C /* TextExpansionButtonModel.swift */,
+				262225AA1E598458004E1B5C /* TextSelectionAppearance.swift */,
+				26577DB71E46BF33008DB9AB /* TextViewLayout.swift */,
+				262225AE1E598B9C004E1B5C /* TextSelectionValidator */,
+				638E5DE32452EB8800FDDFAA /* SelectableTextView.swift */,
+			);
+			path = SelectableTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,11 +413,11 @@
 				26EC5D861E498FDF00BA66D9 /* TextCellModelFactory.swift in Sources */,
 				262225A31E4E7A64004E1B5C /* LinkValidators.swift in Sources */,
 				262225A91E52CE9D004E1B5C /* TextExpansionButtonCell.swift in Sources */,
+				638E5DE42452EB8800FDDFAA /* SelectableTextView.swift in Sources */,
 				26EC5D841E49720900BA66D9 /* TextCellModel.swift in Sources */,
 				262225AB1E598458004E1B5C /* TextSelectionAppearance.swift in Sources */,
 				262225A11E4E77EE004E1B5C /* RegexValidators.swift in Sources */,
 				262225B01E5A51C7004E1B5C /* InterfaceBuilder.swift in Sources */,
-				26577DB61E46BE63008DB9AB /* SelectableTextView.swift in Sources */,
 				26EC5D8E1E4D7AD300BA66D9 /* Extensions.swift in Sources */,
 				26577DBA1E46BF8A008DB9AB /* TextCell.swift in Sources */,
 				262225A51E52BD44004E1B5C /* SelectableTextView+ScrollView.swift in Sources */,
